@@ -9,7 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "storybook dev -p 6006",
-    "build": "tsup",
+    "build": "tsup --metafile",
     "build-storybook": "storybook build"
   },
   "keywords": [],
