@@ -15,7 +15,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "peerDependencies": {
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },
@@ -31,7 +31,9 @@
     "@vitest/browser-playwright": "^4.0.3",
     "@vitest/coverage-v8": "^4.0.3",
     "playwright": "^1.56.1",
+    "react": "^19.2.0",
     "react-docgen-typescript-plugin": "^1.0.8",
+    "react-dom": "^19.2.0",
     "storybook": "^9.1.15",
     "tsup": "^8.5.0",
     "typescript": "^5.9.3",
