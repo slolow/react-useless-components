@@ -6,7 +6,6 @@ export default defineConfig({
   dts: true, // generate .d.ts type declarations
   sourcemap: true,
   clean: true,
-  external: ['react', 'react-dom'],
   // 👇 Exclude stories and tests from the bundle
   ignoreWatch: ['**/*.stories.*', '**/*.test.*'],
   esbuildOptions(options) {
