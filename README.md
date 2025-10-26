@@ -6,3 +6,4 @@ A collection of useless React components nobody needs — but you’ll love them
 
 ```bash
 npm install react-useless-components
+```

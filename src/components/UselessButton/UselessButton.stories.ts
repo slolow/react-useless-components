@@ -1,18 +1,18 @@
-import type { Meta, StoryObj } from '@storybook/react-vite';
+import type { Meta, StoryObj } from "@storybook/react-vite";
 
-import { UselessButton } from './UselessButton';
+import { UselessButton } from "./UselessButton";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title: 'Example/UselessButton',
+  title: "Example/UselessButton",
   component: UselessButton,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
-    layout: 'centered',
+    layout: "centered",
   },
   // More on argTypes: https://storybook.js.org/docs/api/argtypes
   argTypes: {
-    backgroundColor: { control: 'color' },
+    backgroundColor: { control: "color" },
   },
   args: { onClick: () => alert("run my onClick function") },
 } satisfies Meta<typeof UselessButton>;
@@ -24,26 +24,26 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
   args: {
     primary: true,
-    label: 'UselessButton',
+    label: "UselessButton",
   },
 };
 
 export const Secondary: Story = {
   args: {
-    label: 'UselessButton',
+    label: "UselessButton",
   },
 };
 
 export const Large: Story = {
   args: {
-    size: 'lg',
-    label: 'UselessButton',
+    size: "lg",
+    label: "UselessButton",
   },
 };
 
 export const Small: Story = {
   args: {
-    size: 'sm',
-    label: 'UselessButton',
+    size: "sm",
+    label: "UselessButton",
   },
 };
