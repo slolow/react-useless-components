@@ -2,8 +2,9 @@
   "name": "react-useless-components",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
@@ -11,8 +12,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "storybook dev -p 6006",
-    "build": "tsup --metafile",
+    "build": "vite build && tsc --project tsconfig.lib.json",
     "build-storybook": "storybook build",
+    "typecheck": "tsc --noEmit",
     "prepare": "husky"
   },
   "lint-staged": {
@@ -32,23 +34,24 @@
     "@storybook/addon-onboarding": "^10.0.7",
     "@storybook/addon-vitest": "^10.0.7",
     "@storybook/react-vite": "^10.0.7",
-    "@tailwindcss/postcss": "^4.1.16",
+    "@tailwindcss/vite": "^4.1.17",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
+    "@vitejs/plugin-react": "^5.1.1",
     "@vitest/browser-playwright": "^4.0.3",
     "@vitest/coverage-v8": "^4.0.3",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.6",
     "playwright": "^1.56.1",
-    "postcss": "^8.5.6",
     "prettier": "3.6.2",
     "react": "^19.2.0",
     "react-docgen-typescript-plugin": "^1.0.8",
     "react-dom": "^19.2.0",
     "storybook": "^10.0.7",
     "tailwindcss": "^4.1.16",
-    "tsup": "^8.5.0",
     "typescript": "^5.9.3",
+    "vite": "^7.2.2",
+    "vite-plugin-dts": "^4.5.4",
     "vitest": "^4.0.3"
   }
 }
