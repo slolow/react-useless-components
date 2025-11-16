@@ -1,11 +1,13 @@
 type UselessAsciiArtProps = {
   ariaLabel: string;
   asciiArt: string;
+  animation?: "flicker" | "blink";
 };
 
 export const UselessAsciiArt = ({
   ariaLabel,
   asciiArt,
+  animation,
 }: UselessAsciiArtProps) => {
   const centeredAsciiArt = asciiArt
     .replace(/\n/, "") // remove first empty line
@@ -16,9 +18,7 @@ export const UselessAsciiArt = ({
   return (
     <pre
       aria-label={ariaLabel}
-      className={
-        "font-mono text-gray-950 dark:text-white text-base/6 whitespace-pre overflow-auto"
-      }
+      className={`${animation} font-mono text-gray-950 dark:text-white text-base/6 whitespace-pre overflow-auto`}
     >
       {centeredAsciiArt}
     </pre>
