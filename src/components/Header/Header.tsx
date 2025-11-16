@@ -1,6 +1,6 @@
 import React from "react";
 
-import { UselessButton } from "../UselessButton/UselessButton";
+import { UselessButton } from "../UselessButton";
 import "./header.css";
 
 type User = {
