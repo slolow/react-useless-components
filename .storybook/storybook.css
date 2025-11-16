@@ -1,0 +1,5 @@
+@import "../src/index.css";
+
+.docs-story {
+  @apply bg-white dark:bg-gray-950;
+}
