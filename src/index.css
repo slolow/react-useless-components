@@ -1,1 +1,10 @@
 @import "tailwindcss";
+/* tailwindcss v4 sets by default the light/dark theme from your system (@media (prefers-color-scheme: dark))
+with the next line we switch it to set the light dark theme depending on whether the class="dark" is in the html element
+or not.
+We do so, because the @storybook/addon-themes relies on this.
+This means users of the component system have to set their dark mode by adding a class="dark" to html.
+They can also implement a three way (light, dark, system)
+Check this out for more information: https://tailwindcss.com/docs/dark-mode#toggling-dark-mode-manually
+*/
+@custom-variant dark (&:where(.dark, .dark *));
