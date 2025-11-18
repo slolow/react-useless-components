@@ -160,3 +160,83 @@ Check this out for more information: https://tailwindcss.com/docs/dark-mode#togg
     opacity: 1;
   }
 }
+
+.wiggle {
+  animation: wiggleAnimation 2s ease-in-out infinite;
+}
+
+@keyframes wiggleAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(0.5deg);
+  }
+  75% {
+    transform: rotate(-0.5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.drop {
+  animation: dropAnimation 1s ease-in-out;
+}
+
+@keyframes dropAnimation {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(10px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.breathe {
+  animation: breatheAnimation 4s ease-in-out infinite;
+}
+
+@keyframes breatheAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.015);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.rainbow {
+  background: linear-gradient(
+    90deg,
+    red,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet
+  );
+  -webkit-background-clip: text;
+  background-size: 200% 100%;
+  color: transparent;
+  animation: rainbowAnimation 8s linear infinite;
+}
+
+@keyframes rainbowAnimation {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
