@@ -130,6 +130,14 @@ export const WiggleStory: Story = {
   },
 };
 
+export const BreatheStory: Story = {
+  args: {
+    ariaLabel: islandAriaLabel,
+    asciiArt: island,
+    animation: "breathe",
+  },
+};
+
 export const RainbowStory: Story = {
   args: {
     ariaLabel: islandAriaLabel,
