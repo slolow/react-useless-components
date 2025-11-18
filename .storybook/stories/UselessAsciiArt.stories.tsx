@@ -39,6 +39,7 @@ export const IslandFishingStory: Story = {
   args: {
     ariaLabel: islandAriaLabel,
     asciiArt: island,
+    animation: "drop",
   },
 };
 
@@ -118,5 +119,37 @@ export const BlinkStory: Story = {
     ariaLabel: islandAriaLabel,
     asciiArt: island,
     animation: "blink",
+  },
+};
+
+export const WiggleStory: Story = {
+  args: {
+    ariaLabel: islandAriaLabel,
+    asciiArt: island,
+    animation: "wiggle",
+  },
+};
+
+export const BreatheStory: Story = {
+  args: {
+    ariaLabel: islandAriaLabel,
+    asciiArt: island,
+    animation: "breathe",
+  },
+};
+
+export const RainbowStory: Story = {
+  args: {
+    ariaLabel: islandAriaLabel,
+    asciiArt: island,
+    animation: "rainbow",
+  },
+};
+
+export const CustomAnimationStory: Story = {
+  args: {
+    ariaLabel: islandAriaLabel,
+    asciiArt: island,
+    customAnimationCssClass: "mySuperCssAnimationClass",
   },
 };
