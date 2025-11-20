@@ -28,8 +28,6 @@ pnpm add react-useless-components
 
 ## 📦 Usage (For Library Users)
 
-This section explains everything a consumer of your library needs to know.
-
 ### 1️⃣ Importing components
 
 Each component is exported from the library root:
