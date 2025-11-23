@@ -132,7 +132,18 @@ npm install
 
 ### 3️⃣ Run Storybook (development mode)
 
-The recommended way to develop components is inside Storybook:
+The recommended way to develop components is inside Storybook. To run storybook you will need the correct node version to be installed.
+The project node version is defined in the .nvmrc file.
+
+Just run
+
+```bash
+nvm use
+```
+
+to use the project version.
+
+Once the correct node version is installed run the storybook like this:
 
 ```bash
 npm run dev
