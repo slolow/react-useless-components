@@ -16,8 +16,30 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
-export const DefaultStory: Story = {
+export const NoLimitsStory: Story = {
   args: {
-    label: "label",
+    label: "no limit",
+  },
+};
+
+export const MaxStory: Story = {
+  args: {
+    label: "max = 3",
+    max: 3,
+  },
+};
+
+export const MinStory: Story = {
+  args: {
+    label: "min = -3",
+    min: -3,
+  },
+};
+
+export const RangeStory: Story = {
+  args: {
+    label: "min = -3, max = 3",
+    min: -3,
+    max: 3,
   },
 };
