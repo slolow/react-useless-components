@@ -240,3 +240,16 @@ Check this out for more information: https://tailwindcss.com/docs/dark-mode#togg
     background-position: 200%;
   }
 }
+
+/* Remove default browser increment, decrement buttons for number input fields*/
+/* Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
