@@ -4,3 +4,4 @@ export { UselessButton } from "./components/UselessButton";
 export { UselessTooltip } from "./components/UselessToolTip";
 export { UselessAsciiArt } from "./components/UselessAsciiArt";
 export { UselessNumberInput } from "./components/UselessNumberInput";
+export { UselessPokemonCardPicker } from "./components/UselessPokemonCardPicker";
